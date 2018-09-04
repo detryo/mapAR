@@ -69,7 +69,6 @@ class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDeleg
     // MARK: - ARSKViewDelegate
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
-        
         let labelNode = SKLabelNode(text: sites[anchor.identifier])
         labelNode.horizontalAlignmentMode = .center
         labelNode.verticalAlignmentMode = .center
